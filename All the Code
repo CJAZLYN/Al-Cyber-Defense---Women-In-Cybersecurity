@@ -1,0 +1,10 @@
+Module 2 : Building Your First Security Tool
+
+2.1 Setting up the Project 
+Create the Project ( Doing on PowerShell)
+mkdir ~/sysmon-parser
+cd ~/sysmon-parser
+claude
+
+Initialize with Claude
+> /init - Once this is present below, will ask you to create a blank CLANDE.md file 
