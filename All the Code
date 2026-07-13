@@ -1,3 +1,19 @@
+Setting up Your Environment
+# irm https://claude.ai/install.ps1 | iex
+# OR via WinGet
+winget install Anthropic.ClaudeCode
+Verify installation
+claude --version
+
+Creating a Working Directory
+mkdir ~/ai-defense-labs
+cd ~/ai-defense-labs
+claude
+simple prompt: Create a file called hello.txt with the text " Claude Code is working".
+
+
+
+
 Module 2 : Building Your First Security Tool
 
 2.1 Setting up the Project 
@@ -8,3 +24,28 @@ claude
 
 Initialize with Claude
 > /init - Once this is present below, will ask you to create a blank CLANDE.md file 
+
+Create a basic CLAUDE.md 
+Wrote 11 lines to CLAUDE.md
+- This file provides guidance to Claude Code ( claude.ai/code) when working with code in this repository.
+
+Let's give Claude context about what we're building:
+
+> Update CLAUDE.md with the following project context:
+>
+> This is a Sysmon XML parser project. The goal is to build a Python tool 
+> that extracts key fields from Sysmon Event ID 1 (Process Creation) events.
+>
+> Key fields to extract:
+> - EventID
+> - UtcTime  
+> - Image (process path)
+> - CommandLine
+> - User
+> - IntegrityLevel
+> - ParentImage
+> - ParentCommandLine
+> - Computer
+> - Hashes
+>
+> Output format: JSON (one object per event, or array for multiple events)
